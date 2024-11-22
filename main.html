@@ -1,257 +1,259 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <title>PorscheX</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">PorscheX</a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <title>PorscheX</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">PorscheX</a>
         </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#rent">Kölcsönzés</a></li>
-          <li><a href="#service">Szolgáltatások</a></li>
-          <li><a href="#ride">Ügyfélélmény</a></li>
-          <li><a href="#contact">Kapcsolat</a></li>
-          <li class="nav__links__btn">
-            <button class="btn">Regisztráció</button>
-          </li>
-          <li class="nav__links__btn">
-            <button class="btn">Bejelentkezés</button>
-          </li>
-        </ul>
-        <div class="nav__btns">
-          <button class="btn btn__primary"><b>Regisztráció</b></button>
-          <button class="btn btn__secondary"><b>Bejelentkezés</b></button>
-        </div>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <div class="header__image">
-          <img src="assets/porsche.jpg" alt="header" />
-        </div>
-        <div class="header__content">
-          <h1>Szeretne többet megtakarítani bérautóján?</h1>
-          <p>
-            Fedezze fel a PorscheX autókölcsönzési lehetőségeket Magyarországon! Válasszon a számos autólehetőség és helyi különlegesség közül.
-          </p>
-          <div class="header__links">
-            <a href="#">
-              <!-- <img src="assets/store.jpg" alt="app store" /> -->
-            </a>
-            <a href="#">
-              <!-- <img src="assets/play.png" alt="play" /> -->
-            </a>
-          </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
         </div>
       </div>
-    </header>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="rentals/rentals.html">Kölcsönzés</a></li>
+        <li><a href="#service">Szolgáltatások</a></li>
+        <li><a href="#ride">Ügyfélélmény</a></li>
+        <li><a href="#contact">Kapcsolat</a></li>
+        <li class="nav__links__btn">
+          <button class="btn">Regisztráció</button>
+        </li>
+        <li class="nav__links__btn">
+          <button class="btn">Bejelentkezés</button>
+        </li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn btn__primary"><b>Regisztráció</b></button>
+        <button class="btn btn__secondary"><b>Bejelentkezés</b></button>
+      </div>
+    </nav>
+    <div class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/porsche.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Szeretne többet megtakarítani bérautóján?</h1>
+        <p>
+          Fedezze fel a PorscheX autókölcsönzési lehetőségeket Magyarországon! Válasszon a számos autólehetőség és helyi
+          különlegesség közül.
+        </p>
+        <div class="header__links">
+          <a href="#">
+            <!-- <img src="assets/store.jpg" alt="app store" /> -->
+          </a>
+          <a href="#">
+            <!-- <img src="assets/play.png" alt="play" /> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <section class="section__container steps__container" id="rent">
-      <p class="section__subheader">HOGYAN MŰKÖDIK?</p>
-      <h2 class="section__header">3 egymást követő lépés</h2>
-      <div class="steps__grid">
-        <div class="steps__card">
-          <span><i class="ri-map-pin-fill"></i></span>
-          <h4>Válasszon egy helyet
+  <section class="section__container steps__container" id="rent">
+    <p class="section__subheader">HOGYAN MŰKÖDIK?</p>
+    <h2 class="section__header">3 egymást követő lépés</h2>
+    <div class="steps__grid">
+      <div class="steps__card">
+        <span><i class="ri-map-pin-fill"></i></span>
+        <h4>Válasszon egy helyet
         </h4>
-          <p>
-            Válassza ki a kívánt kölcsönzési helyet kiterjedt autókölcsönző-hálózatunkból.
-          </p>
-        </div>
-        <div class="steps__card">
-          <span><i class="ri-calendar-check-fill"></i></span>
-          <h4>
-            Átvétel dátuma</h4>
-          <p>
-            Rugalmas ütemezési lehetőségekkel adja meg azt a dátumot és időpontot, amikor át szeretné venni autóját.
-          </p>
-        </div>
-        <div class="steps__card">
-          <span><i class="ri-bookmark-3-fill"></i></span>
-          <h4>Foglalja le autóját</h4>
-          <p>
-            Böngésszen széles járműkínálatunk között, és válassza ki az igényeinek leginkább megfelelőt.
-          </p>
-        </div>
+        <p>
+          Válassza ki a kívánt kölcsönzési helyet kiterjedt autókölcsönző-hálózatunkból.
+        </p>
       </div>
-    </section>
+      <div class="steps__card">
+        <span><i class="ri-calendar-check-fill"></i></span>
+        <h4>
+          Átvétel dátuma</h4>
+        <p>
+          Rugalmas ütemezési lehetőségekkel adja meg azt a dátumot és időpontot, amikor át szeretné venni autóját.
+        </p>
+      </div>
+      <div class="steps__card">
+        <span><i class="ri-bookmark-3-fill"></i></span>
+        <h4>Foglalja le autóját</h4>
+        <p>
+          Böngésszen széles járműkínálatunk között, és válassza ki az igényeinek leginkább megfelelőt.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="section__container service__container" id="service">
-      <div class="service__image">
-        <img src="assets/porsche-other.png" alt="service" />
-      </div>
-      <div class="service__content">
-        <p class="section__subheader">LEGJOBB SZOLGÁLTATÁSOK</p>
-        <h2 class="section__header">
-            Érezze a legjobb élményt bérleti ajánlatainkkal
-        </h2>
-        <ul class="service__list">
-          <li>
-            <span><i class="ri-price-tag-3-fill"></i></span>
-            <div>
-              <h4>Akciók minden költségvetéshez</h4>
-              <p>
-                A gazdaságos autóktól a luxusautókig van valami
-                mindenki számára, biztosítva, hogy a legjobb ár-érték arányt kapja a pénzéért.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span><i class="ri-wallet-fill"></i></span>
-            <div>
-              <h4>Legjobb ár garancia</h4>
-              <p>
-                Biztosítjuk, hogy versenyképes árakat kapjon a piacon, így megteheti
-                magabiztosan foglaljon, tudva, hogy a legjobb ajánlatot kapja.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span><i class="ri-customer-service-fill"></i></span>
-            <div>
-              <h4>24 órás támogatás</h4>
-              <p>
-                Elkötelezett csapatunk a hét minden napján, 24 órában rendelkezésre áll, hogy segítsen Önnek mindenben
-                kérdése vagy aggálya, biztosítva a zökkenőmentes bérlési élményt.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section__container experience__container" id="ride">
-      <p class="section__subheader">VEVŐI TAPASZTALAT</p>
+  <section class="section__container service__container" id="service">
+    <div class="service__image">
+      <img src="assets/porsche-other.png" alt="service" />
+    </div>
+    <div class="service__content">
+      <p class="section__subheader">LEGJOBB SZOLGÁLTATÁSOK</p>
       <h2 class="section__header">
-        A legjobb ügyfélélményt biztosítjuk
+        Érezze a legjobb élményt bérleti ajánlatainkkal
       </h2>
-      <div class="experience__content">
-        <div class="experience__card">
+      <ul class="service__list">
+        <li>
           <span><i class="ri-price-tag-3-fill"></i></span>
-          <h4>Versenyképes árképzés</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-money-rupee-circle-fill"></i></span>
-          <h4>Könnyebb bérlés a költségvetésből</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-bank-card-fill"></i></span>
-          <h4>A legtöbb megfizethető fizetési terv</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-award-fill"></i></span>
-          <h4>A legjobb kiterjesztett autógarancia</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-customer-service-2-fill"></i></span>
-          <h4>Közúti segítségnyújtás a hét minden napján, 24 órában</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-car-fill"></i></span>
-          <h4>Az Ön által választott szerelő</h4>
-        </div>
-        <img src="assets/porsche-above.png" alt="experience" /> 
-      </div>
-    </section>
-
-    <section class="section__container download__container" id="contact">
-      <div class="download__grid">
-        <div class="download__content">
-          <h2 class="section__header">További kiváló autók amit a cégünk ajánl magának!</h2>
-          <p>
-            Bérelje őket amikor csak akarja és elérhetőek, pár órán belül a telephelyünkön vezetésre készen várja a járműve!
-          </p>
-          <div class="download__links">
-            <a href="#">
-              <!-- <img src="assets/store.jpg" alt="app store" /> -->
-            </a>
-            <a href="#">
-              <!-- <img src="assets/play.png" alt="play" /> -->
-            </a>
+          <div>
+            <h4>Akciók minden költségvetéshez</h4>
+            <p>
+              A gazdaságos autóktól a luxusautókig van valami
+              mindenki számára, biztosítva, hogy a legjobb ár-érték arányt kapja a pénzéért.
+            </p>
           </div>
-        </div>
-        <div class="download__image">
-          <!-- <img src="assets/download.png" alt="download" /> -->
-        </div>
-      </div>
-    </section>
+        </li>
+        <li>
+          <span><i class="ri-wallet-fill"></i></span>
+          <div>
+            <h4>Legjobb ár garancia</h4>
+            <p>
+              Biztosítjuk, hogy versenyképes árakat kapjon a piacon, így megteheti
+              magabiztosan foglaljon, tudva, hogy a legjobb ajánlatot kapja.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span><i class="ri-customer-service-fill"></i></span>
+          <div>
+            <h4>24 órás támogatás</h4>
+            <p>
+              Elkötelezett csapatunk a hét minden napján, 24 órában rendelkezésre áll, hogy segítsen Önnek mindenben
+              kérdése vagy aggálya, biztosítva a zökkenőmentes bérlési élményt.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h4>Termékeink</h4>
-          <ul class="footer__links">
-            <li><a href="#">Karrier</a></li>
-            <li><a href="#">Szállodák</a></li>
-            <li><a href="#">Autók</a></li>
-            <li><a href="#">Csomagok</a></li>
-            <li><a href="#">Jellemzők</a></li>
-            <li><a href="#">Árvonal</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>A PorscheX-ről</h4>
-          <ul class="footer__links">
-            <li><a href="#">Miért a PorscheX?</a></li>
-            <li><a href="#">A mi történetünk</a></li>
-            <li><a href="#">Befektetők</a></li>
-            <li><a href="#">Sajtóközpontok</a></li>
-            <li><a href="#">Hirdetés</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Erőforrás</h4>
-          <ul class="footer__links">
-            <li><a href="#">Súgóközpontok</a></li>
-            <li><a href="#">Útmutatók</a></li>
-            <li><a href="#">Partnerhálózat</a></li>
-            <li><a href="#">Mechanics</a></li>
-            <li><a href="#">Fejlesztő</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Extrák</h4>
-          <ul class="footer__links">
-            <li><a href="#">Bérleti ajánlat</a></li>
-            <li><a href="#">Javítóműhely</a></li>
-            <li><a href="#">Foglalás megtekintése</a></li>
-            <li><a href="#">Bérbeadó cégek</a></li>
-            <li><a href="#">Új ajánlatok</a></li>
-          </ul>
+  <section class="section__container experience__container" id="ride">
+    <p class="section__subheader">VEVŐI TAPASZTALAT</p>
+    <h2 class="section__header">
+      A legjobb ügyfélélményt biztosítjuk
+    </h2>
+    <div class="experience__content">
+      <div class="experience__card">
+        <span><i class="ri-price-tag-3-fill"></i></span>
+        <h4>Versenyképes árképzés</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-money-rupee-circle-fill"></i></span>
+        <h4>Könnyebb bérlés a költségvetésből</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-bank-card-fill"></i></span>
+        <h4>A legtöbb megfizethető fizetési terv</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-award-fill"></i></span>
+        <h4>A legjobb kiterjesztett autógarancia</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-customer-service-2-fill"></i></span>
+        <h4>Közúti segítségnyújtás a hét minden napján, 24 órában</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-car-fill"></i></span>
+        <h4>Az Ön által választott szerelő</h4>
+      </div>
+      <img src="assets/porsche-above.png" alt="experience" />
+    </div>
+  </section>
+
+  <section class="section__container download__container" id="contact">
+    <div class="download__grid">
+      <div class="download__content">
+        <h2 class="section__header">További kiváló autók amit a cégünk ajánl magának!</h2>
+        <p>
+          Bérelje őket amikor csak akarja és elérhetőek, pár órán belül a telephelyünkön vezetésre készen várja a
+          járműve!
+        </p>
+        <div class="download__links">
+          <a href="#">
+            <!-- <img src="assets/store.jpg" alt="app store" /> -->
+          </a>
+          <a href="#">
+            <!-- <img src="assets/play.png" alt="play" /> -->
+          </a>
         </div>
       </div>
-      <div class="section__container footer__bar">
-        <h4>PorscheX</h4>
-        <p>Minden jog fenntartva.</p>
-        <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-google-fill"></i></a>
-          </li>
+      <div class="download__image">
+        <!-- <img src="assets/download.png" alt="download" /> -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h4>Termékeink</h4>
+        <ul class="footer__links">
+          <li><a href="#">Karrier</a></li>
+          <li><a href="#">Szállodák</a></li>
+          <li><a href="#">Autók</a></li>
+          <li><a href="#">Csomagok</a></li>
+          <li><a href="#">Jellemzők</a></li>
+          <li><a href="#">Árvonal</a></li>
         </ul>
       </div>
-    </footer>
+      <div class="footer__col">
+        <h4>A PorscheX-ről</h4>
+        <ul class="footer__links">
+          <li><a href="#">Miért a PorscheX?</a></li>
+          <li><a href="#">A mi történetünk</a></li>
+          <li><a href="#">Befektetők</a></li>
+          <li><a href="#">Sajtóközpontok</a></li>
+          <li><a href="#">Hirdetés</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Erőforrás</h4>
+        <ul class="footer__links">
+          <li><a href="#">Súgóközpontok</a></li>
+          <li><a href="#">Útmutatók</a></li>
+          <li><a href="#">Partnerhálózat</a></li>
+          <li><a href="#">Mechanics</a></li>
+          <li><a href="#">Fejlesztő</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Extrák</h4>
+        <ul class="footer__links">
+          <li><a href="#">Bérleti ajánlat</a></li>
+          <li><a href="#">Javítóműhely</a></li>
+          <li><a href="#">Foglalás megtekintése</a></li>
+          <li><a href="#">Bérbeadó cégek</a></li>
+          <li><a href="#">Új ajánlatok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section__container footer__bar">
+      <h4>PorscheX</h4>
+      <p>Minden jog fenntartva.</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-google-fill"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
