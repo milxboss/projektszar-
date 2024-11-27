@@ -81,3 +81,11 @@ ScrollReveal().reveal(".download__links", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+function openPopup() {
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
