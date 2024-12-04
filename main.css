@@ -239,7 +239,7 @@ nav {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.steps__card:hover span {
+span:hover {
   padding: 14px 21px;
   background: var(--gradient);
   color: var(--white);
@@ -506,7 +506,7 @@ nav {
 .image-front {
   position: relative;
   z-index: 2;
-  max-width: 120%; 
+  max-width: 120%;
   max-height: 120%;
   border-radius: 10px;
 }
