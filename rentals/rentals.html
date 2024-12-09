@@ -24,52 +24,50 @@
   <main>
     <section class="card-grid">
       <div class="card">
-        <img src="../assets/gt3rs.png" alt="Car 1">
+        <img src="../assets/gt3rs.png" alt="GT3RS">
         <h3>Porsche 911 GT3 RS</h3>
         <p>
           Az ikonikus sportautó, amely lenyűgöző teljesítményt és páratlan vezetési élményt nyújt. A tökéletes választás
           autórajongóknak.
         </p>
-        <button class="btn" onclick="openPopup()">Bérlés</button>
+        <button class="btn" onclick="openPopup('gt3rs-popup')">Bérlés</button>
       </div>
       <div id="popup" class="popup">
         <div class="popup-content">
-          <span class="close" onclick="closePopup()">&times;</span>
+          <span class="close" onclick="closePopup('gt3rs-popup')">&times;</span>
           <!-- Popup Body -->
-          <div class="section__container header__container" id="home">
-            <div class="popup-body" id="form-content">
-              <div class="image-container">
-                <div class="background" id="gt3rsBG"></div>
-                <img class="image-front" src="../assets/gtr3rspop.png" alt="Porsche elől" id="gt3rs">
-              </div>
-              <div class="popup-text">
-                <h2>Porsche 911 GT3 RS</h2>
-                <p>
-                  A Porsche 911 GT3 RS a motorsport technológiáját hozza el az utakra. Lenyűgöző aerodinamikával,
-                  könnyített vázzal és versenypályára optimalizált teljesítménnyel. Ez az autó a sebesség
-                  szerelmeseinek készült.
-                </p>
-                <!-- Új űrlap mezők -->
-                <form id="reservation-form">
-                  <div class="form-group">
-                    <label for="first-name">Keresztnév:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="last-name">Vezetéknév:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="date">Foglalási dátum:</label>
-                    <input type="date" id="date" name="date" required>
-                  </div>
-                  <button type="submit" class="btn" onclick="submitForm()">Foglalás</button>
-                </form>
-              </div>
+          <div class="popup-body section__container" id="form-content" id="home">
+            <div class="image-container">
+              <div class="background" id="gt3rsBG"></div>
+              <img class="image-front" src="../assets/gtr3rspop.png" alt="Porsche elől" id="gt3rs">
+            </div>
+            <div class="popup-text">
+              <h2>Porsche 911 GT3 RS</h2>
+              <p>
+                A Porsche 911 GT3 RS a motorsport technológiáját hozza el az utakra. Lenyűgöző aerodinamikával,
+                könnyített vázzal és versenypályára optimalizált teljesítménnyel. Ez az autó a sebesség
+                szerelmeseinek készült.
+              </p>
+              <!-- Új űrlap mezők -->
+              <form id="reservation-form">
+                <div class="form-group">
+                  <label for="first-name">Keresztnév:</label>
+                  <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Vezetéknév:</label>
+                  <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="date">Foglalási dátum:</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn" onclick="submitForm()">Foglalás</button>
+              </form>
             </div>
           </div>
           <div id="success-message" style="display: none; text-align: center;">
@@ -84,7 +82,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/taycan.png" alt="Taycan">
         <h3>Porsche Taycan</h3>
         <p>
           Korszerű elektromos autó, amely ötvözi a gyorsaságot, a fenntarthatóságot és a Porsche által nyújtott luxust.
@@ -92,7 +90,7 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/macan.png" alt="Macan">
         <h3>Porsche Macan</h3>
         <p>
           Kompakt SUV, amely erőteljes motorjával és elegáns megjelenésével tökéletes a városi és vidéki utazásokhoz.
@@ -100,7 +98,7 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/panamera.png" alt="Panamera">
         <h3>Porsche Panamera</h3>
         <p>
           A luxus és a teljesítmény tökéletes ötvözete, amely hosszú utazásokhoz és városi eleganciához egyaránt
@@ -109,7 +107,7 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/cayenne.png" alt="Cayenne">
         <h3>Porsche Cayenne</h3>
         <p>
           A prémium SUV, amely egyszerre biztosítja a dinamikus vezetést és a családi kényelmet, kompromisszumok nélkül.
@@ -117,7 +115,7 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/boxster.png" alt="Boxster">
         <h3>Porsche Boxster</h3>
         <p>
           Stílusos roadster, amely szabad ég alatti vezetési élményt és élénk motorhangot kínál.
@@ -125,7 +123,7 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
+        <img src="../assets/cayman.png" alt="Cayman">
         <h3>Porsche 718 Cayman</h3>
         <p>
           Kompakt sportautó, amely precíz irányíthatóságával és lenyűgöző gyorsulásával hódít.
@@ -133,40 +131,40 @@
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
-        <h3>Porsche 918 Spyder</h3>
+        <img src="../assets/718.png" alt="Spyder">
+        <h3>Porsche 918 Spyder RS</h3>
         <p>
           Hibrid szuperautó, amely egyesíti a modern technológiát a Porsche ikonikus stílusával.
         </p>
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
-        <h3>Porsche Carrera GT</h3>
+        <img src="../assets/cabriolet.png" alt="Cabriolet">
+        <h3>Porsche Carrera GTS Cabriolet</h3>
         <p>
           Legendás szupersportautó, amely elképesztő teljesítményt és exkluzív megjelenést kínál.
         </p>
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
-        <h3>Porsche 959</h3>
+        <img src="../assets/turbo.png" alt="Turbo">
+        <h3>Porsche 911 Turbo S</h3>
         <p>
           A technológiai csoda, amely úttörő fejlesztéseivel és egyedi stílusával a jövőbe mutatott.
         </p>
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
-        <h3>Porsche 356</h3>
+        <img src="../assets/dakar.png" alt="Dakar">
+        <h3>Porsche 911 Dakar</h3>
         <p>
           Az első Porsche modell, amely megalapozta a márka hírnevét és örökségét.
         </p>
         <button class="btn">Bérlés</button>
       </div>
       <div class="card">
-        <img src="." alt=".">
-        <h3>Porsche 935</h3>
+        <img src="../assets/st.png" alt="S/T">
+        <h3>Porsche 911 S/T</h3>
         <p>
           Versenypályára tervezett mestermű, amely a motorsport világában írta be magát a történelembe.
         </p>
