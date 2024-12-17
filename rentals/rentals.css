@@ -109,6 +109,11 @@ nav {
     color: var(--white);
 }
 
+.btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
 .nav__links .btn {
     padding: 0;
     background-color: transparent;
@@ -133,12 +138,17 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    /* Kezdetben rejtett */
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+    transition: transform 0.3s ease;
+
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
@@ -168,6 +178,7 @@ nav {
 
 .card .btn:hover {
     background-color: #3c4286;
+    cursor: pointer;
 }
 
 .image-container {
@@ -175,7 +186,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 700px;
     height: 500px;
 }
 
@@ -205,6 +216,7 @@ nav {
 }
 
 .popup {
+    animation: popupFade 0.3s ease-out forwards;
     position: fixed;
     top: 0;
     left: 0;
@@ -219,7 +231,7 @@ nav {
 
 .popup.show {
     display: flex;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: popupIn 0.4s ease-out forwards;
 }
 
 .popup-content {
@@ -231,6 +243,8 @@ nav {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    transform: scale(0.8);
+    animation: popIn 0.3s ease-out forwards;
 }
 
 .form-group {
@@ -257,15 +271,12 @@ input.error {
     border: 2px solid #ff0000;
 }
 
+
 input.error:focus {
     outline: none;
     box-shadow: 0 0 5px #ff0000;
 }
 
-.success-icon {
-    animation: popUp 0.5s ease-out forwards;
-    margin-bottom: 1rem;
-}
 
 @keyframes popUp {
     0% {
@@ -277,6 +288,16 @@ input.error:focus {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+#success-message {
+    position: relative;
+    /* Fontos: biztosítja a `close` pozicionálását az üzenetablakon belül */
+    background-color: white;
+    color: green;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .success-icon {
@@ -294,6 +315,24 @@ input.error:focus {
     font-size: 1.2rem;
     margin-top: 0.5rem;
     color: #333;
+}
+
+#success-message .btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+#success-message .btn:hover {
+    color: green;
 }
 
 .close {
@@ -610,3 +649,84 @@ input.error:focus {
         height: auto;
     }
 }
+
+@keyframes popupIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+@keyframes popupFade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}
+
+.popup.hide {
+    transition: background-color 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
