@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A Porsche 911 GT3 RS a motorsport technológiáját hozza el az utakra. Lenyűgöző aerodinamikával, könnyített vázzal és versenypályára optimalizált teljesítménnyel. Ez az autó a sebesség szerelmeseinek készült.",
     },
     {
-      name: "Porsche Taycan",
+      name: "Taycan 4S Sport Turismo",
       img: "../assets/taycan.png",
       description:
         "Korszerű elektromos autó, amely ötvözi a gyorsaságot, a fenntarthatóságot és a Porsche által nyújtott luxust.",
